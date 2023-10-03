@@ -5,7 +5,7 @@ export default class PVP extends Battle {
   constructor(protected player1: Fighter, protected player2: Fighter) {
     super(player1);
   }
-    
+
   fight(): number {
     const { player1 } = this;
     const { player2 } = this;

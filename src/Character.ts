@@ -96,7 +96,7 @@ export default class Character implements Fighter {
     this._lifePoints = this.race.maxLifePoints;
   }
 
-  special(enemy: Fighter): void {
+  special(enemy: Fighter | SimpleFighter): void {
     if (this._energy.amount === 10) {
       this._energy.amount -= 10;
       enemy.receiveDamage(this._strength * 2);
